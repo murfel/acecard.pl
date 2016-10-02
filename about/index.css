@@ -1,0 +1,147 @@
+/* html5doctor.com/html-5-reset-stylesheet/ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video
+{ margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+
+body {
+  background-color: #f7f7f7;
+}
+
+.navbar-out {
+	background: #191919 url(../navbar.jpg) no-repeat  center;
+	height: 52px;
+	min-width: 875px;
+}
+
+.navbar {
+	margin-top: -52px;
+	margin-left: -28px;
+	margin-right: -28px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+
+#nav-main {
+	margin-top: 17px;
+  font-size: 18px;
+  color: #cccccc;
+  text-decoration: none;
+}
+
+#nav-set {
+	margin-top: -24px;
+	margin-left: 315px;
+	width: 200px;
+}
+#setlink {
+	color: #cccccc;
+	text-decoration: none;	
+}
+
+#nav-about {
+	margin-top: 4px;
+	margin-left: 345px;
+	color: #ffffff;
+	cursor: default;
+}
+
+#nav-main:hover,
+#nav-main:focus,
+#setlink:hover,
+#setlink:focus {
+	color: #ffffff;
+}
+
+
+/*--------------------------------------*/
+
+.pg-wrap {
+	margin: 0 auto;
+  width: 875px;	
+}
+
+.pg-content {
+	margin: 0 70px;
+  width: 735px;
+}	
+
+.cont {
+	padding-top: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;	
+}
+
+a {
+	text-decoration: none;
+}
+
+.l:link {
+	color: blue;
+}
+
+.l:visited {
+	color: blue;
+}
+
+.l:hover {
+	text-decoration: underline;
+}
+
+
+/*--------Фуууууууууууууууууууууууууутер------------------------------*/
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+* html .page-wrapper {
+    height: 100%;
+}
+.page-buffer {
+    height: 50px;
+}
+
+
+.footer-out {
+	background-color: #191919;
+	margin-top: -60px;
+	height: 60px;
+}
+
+.footer {
+	height: 14px;
+	width: 735px;
+	background-color: #191919;
+	font-size: 14px;
+	color: white;
+	margin-top: 70px;
+	padding: 23px 70px;
+}
+
+#left {
+	float: left;
+}
+#right {
+	float: right;
+}
+
+#right-not-float {
+	margin-left: 500px;
+}
+
+.nl {
+	text-decoration: none;
+}
+.nl:link,
+.nl:visited {
+	color: white;
+}

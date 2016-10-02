@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+	<title>AceCard — генератор кувертных карточек</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="Description" content="Одиночная и массовая генерация посадочных (кувертных) карточек на основе минималистичного шаблона… Распечатайте карточку на обычном принтере и согните ее в треугольную призму."/>	
+	<meta name="Keywords" content="кувертная карточка, генератор кувертных карточек, place card, place card generator, place card creator">
+	<meta name="viewport" content="width=835" />
+	<link href="index.css" rel="stylesheet">
+	<link rel="apple-touch-icon" href="../../ico/1favicon.ico">
+	<link rel="shortcut icon" href="../../ico/1favicon.ico">
+</head>
+
+<body>
+<div class="main">
+<div class="navbar-out"></div>
+<div class="pg-wrap">
+<div class="pg-content">
+<div class="navbar">
+	<div id="nav-main">AceCard</div>
+	<div id="nav-set"><a id="setlink" href="/set">Массовый генератор</a></div>
+	<div id="nav-about"><a id="aboutlink" href="/about">О проекте</a></div>	
+</div>
+
+<div class="cont">
+<div class="paper top"></div>		  						
+<div class="paper middle"></br>
+<form method="post" action="generator.php">
+	<input id="name" name="ship_name"
+	placeholder="Имя и фамилия" value="" autofocus>
+	<input id="title" name="title" 
+	placeholder="Подпись: титул, звание, род занятия" value="">
+</div>		
+<div class="paper bottom">
+<div id="promo" class="collapse in one">
+	<p id="prtext">Создано на AceCard.pl</p>
+</div>	
+</div>
+			  
+
+</br>
+<p>
+	<input type="checkbox" value="on" name="lines" id="lines">
+		<label class="option" for="lines">Убрать линии сгиба</label>
+	</input>
+</p>
+<p>
+	<input class="option" type="checkbox" value="on" name="promo" id="aligxo" data-toggle="collapse" data-target="#promo">
+		<label for="aligxo">Убрать промо-надпись</label>
+	</input>
+</p>
+<p><input class="option" type="checkbox" value="on" name="boring">
+	<span id="tipholder" data-toggle="collapse" data-target="#tip"> Я иду на скучное мероприятие</span></input></p>	
+	<div id="tip" class="collapse two">Флажок добавит стихотворение для разучивания на&nbsp;оборот карточки. Впрочем, если вы хотите читать что-то другое, то</br>
+		<textarea id="feed" rows="6" cols="40" name="feed" placeholder="вставьте свой интеллектуальный обед сюда"></textarea>
+	</div>
+
+</br>
+
+<p align="right"><button type="submit" class="btn btn-default">Получить PDF</button></p>
+</form>	 
+
+</br>
+<p><h5>Распечатайте карточку и сложите её в треугольную призму:</h5></p>
+</br></br>
+<img src="pics/instr_1.png" width="350" class="toper" alt="">
+<img src="pics/instr_2.png" width="350" class="toper right" alt="">
+<img src="pics/instr_3.png" width="350" alt="">
+<img src="pics/instr_4.png" width="350" class="right" alt="">
+</div>
+</div>
+<div class="footer">
+<a class="nl" href="mailto:murnatty@gmail.com">murnatty@gmail.com</a><span id="right"><a class="nl" href="http://creativecommons.org/licenses/by-sa/4.0/">(cc)</a> 2014 </span>
+</div>
+</div>
+<div class="footer-out"></div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
